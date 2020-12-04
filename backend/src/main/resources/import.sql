@@ -7,3 +7,15 @@ INSERT INTO tb_user (name, registration, email, cpf, rg, genre, date_Of_Birth, a
 
 INSERT INTO tb_role (authority) VALUES ('ROLE_OPERATOR');
 INSERT INTO tb_role (authority) VALUES ('ROLE_ADMIN');
+
+INSERT INTO tb_student (name_Father, name_Mother, user_id) VALUES ('ACRISIO BATISTA SANTOS', 'ANGELA MARIA SANTOS', 1);
+INSERT INTO tb_student (name_Father, name_Mother, user_id) VALUES ('COSME GOMES DUARTE', 'SANDRA REGINA DIAS DUARTE', 2);
+INSERT INTO tb_student (name_Father, name_Mother, user_id) VALUES ('JEAN CHARLES BATISTA SANTOS', 'CAMILLA DIAS DUARTE SANTOS', 3);
+INSERT INTO tb_student (name_Father, name_Mother, user_id) VALUES ('JEAN CHARLES BATISTA SANTOS', 'CAMILLA DIAS DUARTE SANTOS', 4);
+
+
+INSERT INTO tb_user_role (user_id, role_id) VALUES (1, 1);
+INSERT INTO tb_user_role (user_id, role_id) VALUES (1, 2);
+INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 1);
+INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
+INSERT INTO tb_user_role (user_id, role_id) VALUES (4, 1);

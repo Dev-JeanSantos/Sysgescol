@@ -47,6 +47,11 @@ public class User implements Serializable {
 	@OneToMany(mappedBy = "user")
 	private List<Teacher> teachers = new ArrayList<>();
 	
+	@OneToMany(mappedBy = "user")
+	private List<Director> directors = new ArrayList<>();
+	
+	@OneToMany(mappedBy = "user")
+	private List<Secretary> secretaries  = new ArrayList<>();
 
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "tb_user_role",
@@ -105,14 +110,10 @@ public class User implements Serializable {
 		return email;
 	}
 
-
-
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-
-
+	
 	public String getCpf() {
 		return cpf;
 	}
@@ -179,6 +180,21 @@ public class User implements Serializable {
 
 	public List<Student> getStudents() {
 		return students;
+	}
+	public List<Teacher> getTeachers() {
+		return teachers;
+	}
+
+	public List<Secretary> getSecretaries() {
+		return secretaries;
+	}
+
+	public List<Director> getDirectors() {
+		return directors;
+	}
+	
+	public Set<Role> getRoles() {
+		return roles;
 	}
 
 	@Override

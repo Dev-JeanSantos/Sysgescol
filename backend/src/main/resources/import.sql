@@ -2,7 +2,9 @@ INSERT INTO tb_user (name, registration, email, cpf, rg, genre, date_Of_Birth, a
 INSERT INTO tb_user (name, registration, email, cpf, rg, genre, date_Of_Birth, address, contact, img_Url, password) VALUES ('CAMILLA DIAS DUARTE SANTOS', '102', 'camilladdsan@gmail.com', '676253985-87','35910662-6', 'Feminino',TIMESTAMP WITH TIME ZONE '1979-04-18T20:50:07.12345Z','Rua Manoel Novis 201 Centro Tanguá-RJ CEP:24890-000','021-97993-2737','imagemcamilla.jpg','$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
 INSERT INTO tb_user (name, registration, email, cpf, rg, genre, date_Of_Birth, address, contact, img_Url, password) VALUES ('JEAN CHARLES DUARTE SANTOS', '103', 'jeancduasan@gmail.com', '676253985-87','35910662-6', 'Masculino',TIMESTAMP WITH TIME ZONE '2004-12-18T20:50:07.12345Z','Rua Manoel Novis 201 Centro Tanguá-RJ CEP:24890-000','021-97993-2737','imagemjeanjr.jpg','$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
 INSERT INTO tb_user (name, registration, email, cpf, rg, genre, date_Of_Birth, address, contact, img_Url, password) VALUES ('MELISSA DUARTE SANTOS', '104', 'melgameruser@gmail.com', '676253985-87','35910662-6', 'Masculino',TIMESTAMP WITH TIME ZONE '2004-12-18T20:50:07.12345Z','Rua Manoel Novis 201 Centro Tanguá-RJ CEP:24890-000','021-97993-2737','imagemjeanjr.jpg','$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
-INSERT INTO tb_user (name, registration, email, cpf, rg, genre, date_Of_Birth, address, contact, img_Url, password) VALUES ('PROFESSORA CAMILLA DIAS DUARTE SANTOS', '102', 'professoracamilladdsan@gmail.com', '676253985-87','35910662-6', 'Feminino',TIMESTAMP WITH TIME ZONE '1979-04-18T20:50:07.12345Z','Rua Manoel Novis 201 Centro Tanguá-RJ CEP:24890-000','021-97993-2737','imagemcamilla.jpg','$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+INSERT INTO tb_user (name, registration, email, cpf, rg, genre, date_Of_Birth, address, contact, img_Url, password) VALUES ('PROFESSORA CAMILLA DIAS DUARTE SANTOS', '105', 'professoracamilladdsan@gmail.com', '676253985-87','35910662-6', 'Feminino',TIMESTAMP WITH TIME ZONE '1979-04-18T20:50:07.12345Z','Rua Manoel Novis 201 Centro Tanguá-RJ CEP:24890-000','021-97993-2737','imagemcamilla.jpg','$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+INSERT INTO tb_user (name, registration, email, cpf, rg, genre, date_Of_Birth, address, contact, img_Url, password) VALUES ('ADRIANA COUTO', '106', 'adrianadiretora@bol.comm', '676253985-87','35910662-6', 'Feminino',TIMESTAMP WITH TIME ZONE '2004-12-18T20:50:07.12345Z','Rua Manoel Novis 201 Centro Tanguá-RJ CEP:24890-000','021-97993-2737','imagemjeanjr.jpg','$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+INSERT INTO tb_user (name, registration, email, cpf, rg, genre, date_Of_Birth, address, contact, img_Url, password) VALUES ('RODRIGO MEDEIROS', '1000', 'rodrigosecretario@gmail.com', '676253985-87','35910662-6', 'Feminino',TIMESTAMP WITH TIME ZONE '1979-04-18T20:50:07.12345Z','Rua Manoel Novis 201 Centro Tanguá-RJ CEP:24890-000','021-97993-2737','imagemcamilla.jpg','$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
 
 
 
@@ -16,6 +18,9 @@ INSERT INTO tb_student (name_Father, name_Mother, user_id) VALUES ('JEAN CHARLES
 
 
 INSERT INTO tb_teacher (education, user_id) VALUES (3, 5);
+
+INSERT INTO tb_director (user_id) VALUES (6);
+INSERT INTO tb_secretary (user_id) VALUES (7);
 
 
 INSERT INTO tb_user_role (user_id, role_id) VALUES (1, 1);

@@ -1,4 +1,4 @@
-package com.fourtk.sysgescol.entity;
+package com.fourtk.sysgescol.entities;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.fourtk.sysgescol.entity;
+package com.fourtk.sysgescol.entities;
 
 import java.io.Serializable;
 import java.time.Instant;
@@ -43,6 +43,9 @@ public class User implements Serializable {
 	
 	@OneToMany(mappedBy = "user")
 	private List<Student> students = new ArrayList<>();
+	
+	@OneToMany(mappedBy = "user")
+	private List<Teacher> teachers = new ArrayList<>();
 	
 
 	@ManyToMany(fetch = FetchType.EAGER)

@@ -35,6 +35,7 @@ public class User implements Serializable {
 	private String cpf;
 	private String rg;
 	private String genre;
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE" )
 	private Instant dateOfBirth;
 	private String address;
 	private String contact;
